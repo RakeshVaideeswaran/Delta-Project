@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="@android:drawable/ic_menu_rotate">
+
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:src="@drawable/pic1" />
+
+    <TextView
+        android:id="@+id/txtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/anslayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/anslinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ANSWER : "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/anstxtview"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#00FF00"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/anslinearlayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@android:drawable/ic_menu_rotate"
+            android:onClick="restartGame"
+            app:fabSize="mini" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/statuslayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/statuslinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/statustxtview"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="YOU WIN"
+                android:gravity="center"
+                android:textColor="#00FF00"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statuslinearlayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@android:drawable/ic_menu_rotate"
+            android:onClick="restartGame"
+            app:fabSize="mini" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/A"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="A" />
+
+            <Button
+                android:id="@+id/B"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="B" />
+
+
+            <Button
+                android:id="@+id/C"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="C" />
+
+
+            <Button
+                android:id="@+id/D"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="D" />
+
+
+            <Button
+                android:id="@+id/E"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="E" />
+
+
+            <Button
+                android:id="@+id/F"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="F" />
+
+
+            <Button
+                android:id="@+id/G"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="G" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/H"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="H" />
+
+            <Button
+                android:id="@+id/I"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="I" />
+
+            <Button
+                android:id="@+id/J"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="J" />
+
+            <Button
+                android:id="@+id/K"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="K" />
+
+            <Button
+                android:id="@+id/L"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="L" />
+
+            <Button
+                android:id="@+id/M"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="M" />
+
+            <Button
+                android:id="@+id/N"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="N" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/O"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="O" />
+
+            <Button
+                android:id="@+id/P"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="P" />
+
+            <Button
+                android:id="@+id/Q"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="Q" />
+
+            <Button
+                android:id="@+id/R"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="R" />
+
+            <Button
+                android:id="@+id/S"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="S" />
+
+            <Button
+                android:id="@+id/T"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="T" />
+
+            <Button
+                android:id="@+id/U"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="U" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button35"
+                style="@style/buttonmode" />
+
+            <Button
+                android:id="@+id/V"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="V" />
+
+            <Button
+                android:id="@+id/W"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="W" />
+
+            <Button
+                android:id="@+id/X"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="X" />
+
+            <Button
+                android:id="@+id/Y"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="Y" />
+
+            <Button
+                android:id="@+id/Z"
+                style="@style/buttonsize"
+                android:onClick="gamePlay"
+                android:text="Z" />
+
+            <Button
+                android:id="@+id/button34"
+                style="@style/buttonmode" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
